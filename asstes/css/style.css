@@ -1,0 +1,763 @@
+ /*
+    Template Name: 
+    Author: 
+    Description: 
+
+    Index
+    ====
+    01. Common
+   02.Header
+   03.Banner
+   04.Arrival
+   05.Best Sellers Products
+   06.Testimonials 
+   07.Counter
+   08.Discount
+   09.Footer
+*/
+
+/* 01. Common */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root {
+    --primary-color: #f06856;
+    --font-text-color: #007b50;
+    --bg-color: #007b50;
+    --bg-secondary-color: #f2f6f7;
+    --font-w-size: 700;
+    --font-w: 600;
+}
+
+.pb-40 {
+    padding-bottom: 40px;
+}
+
+.pt-40 {
+    padding-top: 40px;
+}
+
+.pb-60 {
+    padding-bottom: 60px;
+}
+
+.pt-60 {
+    padding-top: 60px;
+}
+
+.pb-80 {
+    padding-bottom: 80px;
+}
+
+.pt-80 {
+    padding-top: 80px;
+}
+
+.pb-100 {
+    padding-bottom: 100px;
+}
+
+.pt-100 {
+    padding-top: 100px;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.align-content {
+    align-content: center;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px 62px;
+    margin: 13px;
+    background: var(--primary-color);
+    border-radius: 40px;
+    transition: .3s;
+    border: 1px solid var(--primary-color);
+}
+
+.btn a {
+    color: #fff;
+    font-size: 22px;
+}
+
+.btn:hover {
+    border: 1px solid var(--bg-color);
+    background-color: var(--bg-color);
+}
+
+/* Section CSS  Start*/
+
+.section-title {
+    text-align: center;
+}
+
+.section-title h4 {
+    display: block;
+    text-transform: uppercase;
+    color: #238c68;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.section-title span {
+    font-size: 48px;
+    line-height: 64px;
+    text-transform: capitalize;
+    font-weight: 400;
+}
+
+.section-title p {
+    font-size: 20px;
+    font-weight: 500;
+    padding-top: 10px;
+}
+
+/* Section CSS  End*/
+
+body {
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+
+/* Header CSS Area  */
+
+
+.header-top-area {
+    padding: 18px 0;
+    background: var(--bg-color);
+}
+
+.header-side {
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+.header-top-info ul {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.header-top-info ul li {
+	margin-right: 10px;
+}
+.header-top-info ul li a {
+    display: block;
+    font-size: 17px;
+    color: #ddd;
+}
+
+.header-top-info ul li a span i {
+    margin: 0 10px;
+}
+
+.header-top-info ul li a:hover {
+    color: var(--primary-color);
+}
+
+.header-top-social {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.header-top-social a {
+    margin-right: 16px;
+    font-size: 20px;
+    color: #ddd;
+}
+
+.header-top-social a:hover {
+    color: var(--primary-color);
+}
+
+.header-brand {
+    padding: 15px 0;
+}
+
+.header-logo {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+.header-logo a {
+    margin: 0 14px;
+    font-size: 24px;
+    display: block;
+    line-height: 36px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.header-menu ul {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.header-menu ul li a {
+    margin-right: 30px;
+    font-size: 16px;
+    line-height: 36px;
+}
+
+.header-menu ul li a span {
+    color: var(--primary-color);
+}
+
+.header-menu ul li a:hover {
+    color: var(--primary-color);
+}
+
+.header-brand {
+    padding: 15px 0;
+    background: #ffffff;
+}
+
+.header-icon {
+    padding-top: 7px;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.header-icon a {
+    font-size: 16px;
+    display: block;
+}
+
+/* Header  CSS Area  */
+
+/* Banner  CSS Area  */
+
+.banner-area {
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+}
+
+.banner {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.banner-content p {
+    max-width: 600px;
+}
+
+.banner-content h4 {
+    font-size: 18px;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    color: var(--bg-color);
+    line-height: 28px;
+}
+
+.banner-content span {
+    font-size: 68px;
+    display: block;
+    line-height: 78px;
+    text-transform: capitalize;
+    padding-bottom: 10px;
+    font-weight: 300;
+}
+
+/* Banner CSS END  */
+
+
+/* Arrival Area CSS  */
+
+.arrival {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px;
+}
+
+.single-arrival {
+    flex-basis: 22%;
+    border: 1px solid #ddd;
+    margin-left: 20px;
+    padding: 4px;
+    box-shadow: 0 15px 15px rgba(0, 0, 0, .30);
+    border-radius: 6px;
+}
+
+.arrival-img {
+    position: relative;
+}
+
+.arrival-img img {
+    border-radius: 15px;
+}
+
+.arrival-icon span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-left: 10px;
+    background: var(--primary-color);
+    color: #fff;
+}
+
+.arrival-icon span {
+    margin: 13px;
+    padding: 0 13px;
+    border-radius: 15px;
+}
+
+
+.arrival-icon {
+    text-align: center;
+}
+
+.arrival-icon a {
+    margin-right: 15px;
+    font-size: 25px;
+}
+
+.arrival-icon a i {
+    margin-bottom: 12px;
+    border: 1px solid #ddd;
+    padding: 5px;
+    border-radius: 50%;
+    transition: .3s;
+}
+
+.arrival-icon a i:hover {
+    background: var(--primary-color);
+    color: #fff;
+    border: 1px solid var(--primary-color);
+}
+
+
+.arrival-content {
+    padding: 20px;
+    background: #ffffff;
+}
+
+.arrival-content h4 {
+    font-weight: 300;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.arrival-content>span {
+    font-weight: 600;
+}
+
+.arrival-content p>span {
+    color: var(--bg-color);
+    text-decoration: line-through;
+}
+
+.arrival-btn a {
+    color: #fff;
+}
+
+/* Best Selier CSS  */
+.selier {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px;
+}
+
+.single-selier {
+    flex-basis: 22%;
+    border: 1px solid #ddd;
+    margin-left: 20px;
+    padding: 4px;
+    box-shadow: 0 15px 15px rgba(0, 0, 0, .30);
+    border-radius: 6px;
+}
+
+.selier-img {
+    position: relative;
+}
+
+.selier-img img {
+    border-radius: 15px;
+}
+
+.selier-icon span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-left: 10px;
+    background: var(--primary-color);
+    color: #fff;
+}
+
+.selier-icon span {
+    margin: 13px;
+    padding: 0 13px;
+    border-radius: 15px;
+}
+
+
+.selier-icon {
+    text-align: center;
+}
+
+.selier-icon a {
+    margin-right: 15px;
+    font-size: 25px;
+}
+
+.selier-icon a i {
+    margin-bottom: 12px;
+    border: 1px solid #ddd;
+    padding: 5px;
+    border-radius: 50%;
+    transition: .3s;
+}
+
+.selier-icon a i:hover {
+    background: var(--primary-color);
+    color: #fff;
+    border: 1px solid var(--primary-color);
+}
+
+
+.selier-content {
+    padding: 20px;
+    background: #ffffff;
+}
+
+.selier-content h4 {
+    font-weight: 300;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.selier-content>span {
+    font-weight: 600;
+}
+
+.selier-content p>span {
+    color: var(--bg-color);
+    text-decoration: line-through;
+}
+
+.selier-btn a {
+    color: #fff;
+}
+
+
+/* Testimonials Area CSS  */
+
+.single-testimonial {
+    flex-basis: 44%;
+    text-align: center;
+}
+
+.testimonial-content p {
+    margin-bottom: 20px;
+    max-width: 520px;
+}
+
+.testimonial-img h4 {
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: 400;
+}
+
+.testimonial-img h4 span {
+    font-size: 15px;
+    display: block;
+    margin-top: 4px;
+}
+
+.testimonial-img img {
+    width: 60px;
+    padding-bottom: 7px;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    padding: 0;
+}
+
+/* Counter Area CSS  */
+
+.counter {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    text-align: center;
+}
+
+.single-counter {
+    flex-basis: 24%;
+}
+
+.single-counter h4 {
+    font-size: 64px;
+    line-height: 78px;
+}
+
+.single-counter p {
+    color: #dddd;
+}
+
+/* Discount Area CSS  */
+
+.discount-area {
+    background: #ffffff;
+}
+
+.discount-content {
+    background-position: center;
+    background-size: cover;
+    padding: 164px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.discount-content h4 {
+    font-size: 48px;
+    line-height: 58px;
+    letter-spacing: 2px;
+    font-weight: 300;
+}
+
+.discount-content p {
+    padding-top: 11px;
+    font-size: 22px;
+}
+
+.discount-btn {
+    margin-top: 40px;
+}
+
+.discount-btn a {
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 20px;
+}
+
+/* Footer Area CSS  */
+
+.footer-contact {
+    border-bottom: 1px solid gray;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 30px 52px;
+    padding: 30px 0;
+}
+
+.single-footer {
+    display: flex;
+    color: #fff;
+    flex-basis: 33%;
+    justify-content: center;
+}
+
+.single-footer a i {
+	color: #fff;
+	font-size: 45px;
+	line-height: 54px;
+}
+
+.single-footer h4 {
+    margin: 0 20px;
+    text-transform: capitalize;
+}
+
+.single-footer span {
+    display: block;
+    padding-top: 6px;
+    font-size: 14px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.footer-logo {
+    flex-basis: 32%;
+    margin: 10px 20px;
+    color: #fff;
+}
+
+.footer-logo a {
+
+    margin-right: 15px;
+    color: #fff;
+
+}
+
+.footer-logo span {
+    font-size: 25px;
+}
+
+.footer-logo a img {
+    margin-right: 15px;
+}
+
+.footer-logo p {
+    margin-top: 20px;
+    padding-bottom: 20px;
+    word-spacing: 2px;
+}
+
+.footer-info a i {
+    padding-top: 10px;
+}
+
+.footer-info a:hover {
+    color: var(--primary-color);
+}
+
+.footer-menu {
+    color: #fff;
+    font-size: 25px;
+    text-transform: capitalize;
+    padding-top: 12px;
+}
+
+.footer-menu ul li {
+    padding-top: 10px;
+}
+
+.footer-menu ul li a {
+    color: #fff;
+    font-size: 18px;
+}
+
+.footer-menu ul li a:hover {
+    color: var(--primary-color);
+}
+
+.footer-menu-2 {
+    color: #fff;
+    font-size: 25px;
+    text-transform: capitalize;
+    padding-top: 12px;
+}
+
+.footer-menu-2 ul li {
+    padding-top: 10px;
+}
+
+.footer-menu-2 ul li a {
+    color: #fff;
+    font-size: 18px;
+}
+
+.footer-menu-2 ul li a:hover {
+    color: var(--primary-color);
+}
+
+.footer-social {
+    color: #fff;
+    font-size: 25px;
+    text-transform: capitalize;
+    padding-top: 12px;
+}
+
+.footer-social ul {
+    display: flex;
+}
+
+.footer-social ul {
+    display: flex;
+}
+
+.footer-social ul li {
+    margin-right: 15px;
+    padding-top: 15px;
+    margin-bottom: 15px;
+}
+
+.footer-social ul li a {
+    font-size: 20px;
+    color: #fff;
+}
+
+.footer-social ul li a i:hover {
+    color: var(--primary-color);
+}
+
+.footer-social p {
+    padding-top: 10px;
+    margin-bottom: 15px;
+}
+
+.footer-copyright {
+    padding: 20px;
+    border-top: 1px solid #ddd;
+}
+
+.footer-copyright p {
+    color: #fff;
+    font-size: 18px;
+    word-spacing: 5px;
+    transition: .3s;
+}
+
+.footer-copyright p:hover {
+    color: var(--primary-color);
+}
